@@ -75,6 +75,7 @@
       <div class="brand"><div class="logo" aria-hidden></div>Roberts Laser</div>
       <nav>
         <a href="#tjanster">Tjänster</a>
+        <a href="#priser">Priser</a>
         <a href="#galleri">Galleri</a>
         <a href="#kontakt">Kontakt</a>
         <a class="btn" href="#kontakt">Få offert</a>
@@ -116,6 +117,28 @@
       </div>
     </section>
 
+    <section id="priser" class="section">
+      <h2>Priser & Frakt</h2>
+      <div class="card">
+        <ul>
+          <li>Nyckelringar (trä/akryl): <strong>från 30 kr/st</strong></li>
+          <li>Underlägg (trä/skiffer): <strong>från 50 kr/st</strong></li>
+          <li>Små skyltar (namn/dörr): <strong>från 120 kr</strong></li>
+          <li>Personliga presenter (ex. skärbräda): <strong>från 200 kr</strong></li>
+        </ul>
+        <p class="muted">Priserna gäller per styck och inkl. enkel gravyr.
+        Vid större beställningar eller specialmotiv lämnas offert.</p>
+
+        <h3>Frakt</h3>
+        <ul>
+          <li>Brev: 39 kr</li>
+          <li>Varubrev (spårbart): 59 kr</li>
+          <li>Paket (större/bulk): från 89 kr</li>
+        </ul>
+        <p class="muted">Fri frakt över 500 kr.</p>
+      </div>
+    </section>
+
     <section id="galleri" class="section">
       <h2>Galleri (platshållare)</h2>
       <p class="muted">Byt ut rutorna nedan mot riktiga foton när du vill.</p>
@@ -140,12 +163,14 @@
     <section id="kontakt" class="section">
       <h2>Kontakt</h2>
       <div class="contact">
-        <form onsubmit="event.preventDefault();window.location.href='mailto:laserrobert84@gmail.com?subject=Förfrågan%20–%20Roberts%20Laser&body=Namn:%0D%0AProjekt:%0D%0AMaterial:%20(trä/akryl/metall)%0D%0AMotiv/idé:%0D%0ABudget:';">
+        <form onsubmit="event.preventDefault(); 
+          window.location.href='mailto:laserrobert84@gmail.com?subject=Förfrågan%20–%20Roberts%20Laser&body=Namn:%0D%0AProjekt:%0D%0AMaterial:%20(trä/akryl/metall)%0D%0AMotiv/idé:%0D%0ABudget:';">
+          <label>
             <span class="muted">Namn</span>
-            <input required placeholder="Robert" />
+            <input required placeholder="Ditt namn" />
           </label>
           <label>
-            <span class="muted">E‑post</span>
+            <span class="muted">E-post</span>
             <input type="email" required placeholder="namn@exempel.se" />
           </label>
           <label>
