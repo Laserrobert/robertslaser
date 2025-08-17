@@ -5,10 +5,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roberts Laser – Personliga gravyrer</title>
   <meta name="description" content="Personliga lasergravyrer i trä, akryl, metall och mer. Perfekta presenter och företagsprofilering." />
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827ee;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --brand:#22c55e;
+      --brand-2:#38bdf8;
+      --accent:#f59e0b;
+      --ring:#22c55e55;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#0b1224,#0f172a 20%,#0b1224);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif}
+    a{color:var(--brand-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:blur(6px);background:#0b1224cc;border-bottom:1px solid #1f2937;z-index:10}
+    .wrap{max-width:1100px;margin:auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .logo{width:32px;height:32px;border-radius:10px;background:conic-gradient(from 180deg,var(--brand),var(--brand-2),var(--accent),var(--brand));box-shadow:0 0 0 3px #000 inset}
+    .nav a{margin-left:16px;color:var(--text)}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001318;padding:12px 18px;border-radius:12px;font-weight:700;border:0}
+    .btn:hover{filter:brightness(1.05)}
+    .hero{padding:54px 0 36px;border-bottom:1px solid #1f2937}
+    .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+    .card{background:linear-gradient(180deg,#0b1224,#0e162c);border:1px solid #1f2937;border-radius:18px;padding:20px;box-shadow:0 10px 30px #0008}
+    .tag{display:inline-block;border:1px solid #234; border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px;letter-spacing:.2px}
+    h1{font-size: clamp(28px, 4vw, 44px); margin:8px 0 10px}
+    p.lead{color:#d1d5db;line-height:1.6}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .mock{aspect-ratio:16/10;border-radius:16px;background:
+      radial-gradient(80% 120% at 10% 10%, #1d263f 0%, transparent 60%),
+      radial-gradient(90% 130% at 90% 20%, #10233a 0%, transparent 60%),
+      linear-gradient(135deg,#0b1224 0%, #0f1b31 100%);
+      border:1px solid #1f2937;position:relative;overflow:hidden}
+    .mock::after{content:"Lasergravyr · Trä · Akryl · Metall";position:absolute;bottom:12px;left:12px;color:#a7f3d0;background:#052016;padding:8px 12px;border-radius:10px;border:1px solid #064e3b}
+
+    .section{padding:40px 0}
+    h2{font-size: clamp(22px, 3vw, 32px); margin:0 0 16px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:linear-gradient(180deg,#0b1224,#0e162c);border:1px solid #1f2937;border-radius:16px;padding:16px}
+    .feature h3{margin:8px 0 6px;font-size:18px}
+    .feature p{margin:0;color:#cbd5e1;font-size:14px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .ph{aspect-ratio:1/1;border-radius:12px;border:1px dashed #334155;display:grid;place-items:center;color:#64748b;font-size:14px}
+
+    .contact{display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
+    form{display:grid;gap:10px}
+    input,textarea{background:#0a1221;border:1px solid #1f2937;border-radius:12px;padding:12px;color:var(--text);font:inherit}
+    input:focus,textarea:focus{outline:2px solid var(--ring);border-color:#115e59}
+    textarea{min-height:120px;resize:vertical}
+    .muted{color:var(--muted);font-size:14px}
+
+    footer{padding:30px 0;border-top:1px solid #1f2937;color:#94a3b8}
+
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .contact{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-  <h1>Roberts Laser</h1>
-  <p>Personliga gravyrer i trä, akryl & metall.</p>
-  <p>Exempelsida – byt ut text och lägg in egna bilder senare.</p>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo" aria-hidden></div>Roberts Laser</div>
+      <nav>
+        <a href="#tjanster">Tjänster</a>
+        <a href="#galleri">Galleri</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn" href="#kontakt">Få offert</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <span class="tag">Hobby → Verksamhet</span>
+          <h1>Personliga gravyrer i <span style="color:var(--brand)">trä</span>, <span style="color:var(--brand-2)">akryl</span> & <span style="color:var(--accent)">metall</span></h1>
+          <p class="lead">Nyckelringar, underlägg, skyltar och presenter. Du skickar idé – jag fixar gravyr. Snabb återkoppling och schyssta priser.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#kontakt">Be om pris</a>
+            <a href="#galleri">Se exempel ↓</a>
+          </div>
+        </div>
+        <div class="mock" aria-label="Bildmockup av graverat objekt"></div>
+      </div>
+    </section>
+
+    <section id="tjanster" class="section">
+      <h2>Tjänster</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Nyckelringar</h3>
+          <p>Trä, läder eller anodiserad aluminium. Perfekt som gåva eller profil.</p>
+        </div>
+        <div class="feature">
+          <h3>Underlägg & skyltar</h3>
+          <p>Skiffer, bambu, akryl eller trä. Rund, fyrkantig eller egen form.</p>
+        </div>
+        <div class="feature">
+          <h3>Personliga presenter</h3>
+          <p>Namn, datum, logga, QR-koder – du väljer motiv, jag graverar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galleri" class="section">
+      <h2>Galleri (platshållare)</h2>
+      <p class="muted">Byt ut rutorna nedan mot riktiga foton när du vill.</p>
+      <div class="grid">
+        <div class="ph">Trä: nyckelring</div>
+        <div class="ph">Skiffer: underlägg</div>
+        <div class="ph">Akryl: skylt</div>
+        <div class="ph">Aluminium: tag</div>
+        <div class="ph">Bambu: skärbräda</div>
+        <div class="ph">Läder: patch</div>
+      </div>
+    </section>
+
+    <section id="om" class="section">
+      <h2>Om Roberts Laser</h2>
+      <div class="card">
+        <p>Hej! Jag heter Robert. Jag gör små serier och specialbeställningar med lasergravyr – snabbt, enkelt och utan krångel. 
+        Skriv vad du vill ha så återkommer jag med förslag och pris.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <div class="contact">
+        <form onsubmit="event.preventDefault(); window.location.href='mailto:dinadress@mail.se?subject=Förfrågan%20–%20Roberts%20Laser&body=Namn:%0D%0AProjekt:%0D%0AMaterial:%20(trä/akryl/metall)%0D%0AMotiv/idé:%0D%0ABudget:';">
+          <label>
+            <span class="muted">Namn</span>
+            <input required placeholder="Ditt namn" />
+          </label>
+          <label>
+            <span class="muted">E‑post</span>
+            <input type="email" required placeholder="namn@exempel.se" />
+          </label>
+          <label>
+            <span class="muted">Meddelande</span>
+            <textarea placeholder="Berätta kort vad du vill gravera"></textarea>
+          </label>
+          <button class="btn" type="submit">Skicka förfrågan</button>
+          <p class="muted">Eller maila direkt: <a href="mailto:dinadress@mail.se">dinadress@mail.se</a></p>
+        </form>
+        <div class="card">
+          <h3>Snabbinfo</h3>
+          <ul>
+            <li>Leveranstid: 2–7 dagar</li>
+            <li>Material på lager: trä, akryl, skiffer</li>
+            <li>Beställning: Swish/Paypal (senare även shop)</li>
+          </ul>
+          <p class="muted" style="margin-top:10px">Uppdatera texten ovan när du vill – allt är bara platshållare.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Roberts Laser. Alla rättigheter förbehålls.</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
